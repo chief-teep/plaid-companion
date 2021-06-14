@@ -1,5 +1,5 @@
 /*
-Copyright 2019 Takuya Urakawa (dm9records.com)
+Copyright 2021 Tyler Pasman (chief_teep)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -21,16 +21,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 /* VID & PID from vusb project, see tmk_core/protocol/vusb/USB-IDs-for-free.txt"*/
-#define VENDOR_ID 0x16c0
-#define PRODUCT_ID 0x27db
-#define DEVICE_VER 0x0002
-#define MANUFACTURER dm9records
-#define PRODUCT Plaid
-#define DESCRIPTION 12x4 ortholinear keyboard with through hole components
+#define VENDOR_ID 0x16c0 /* needs to be updated for pro micro */
+#define PRODUCT_ID 0x27db /* needs to be updated for pro micro */
+#define DEVICE_VER 0x0002 /* needs to be updated for pro micro */
+#define MANUFACTURER chiefteep
+#define PRODUCT Plaidcompanion
+#define DESCRIPTION 3x3 ortholinear macropad with rotary encoder knob
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 12
+#define MATRIX_ROWS 3
+#define MATRIX_COLS 3
 
 /*
  * Keyboard Matrix Assignments
@@ -42,12 +42,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { B4, B5, B3, D4 }
-#define MATRIX_COL_PINS { B0, D7, D6, D5, B2, B1, C0, C1, C2, C3, D1, D0 }
+#define MATRIX_ROW_PINS { C6, D7, E6 }
+#define MATRIX_COL_PINS { D1, D0, D4 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 #define USB_MAX_POWER_CONSUMPTION 100
 
