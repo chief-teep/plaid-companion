@@ -9,11 +9,12 @@ MCU = atmega328p
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = USBasp
+BOOTLOADER = caterina
 
 # Build Options
 #   change yes to no to disable
 #
+ENCODER_ENABLE = yes
 BOOTMAGIC_ENABLE = no      # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
@@ -31,5 +32,5 @@ BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 AUDIO_ENABLE = no           # Audio output on port C6
 FAUXCLICKY_ENABLE = no      # Use buzzer to emulate clicky switches
 
-LAYOUTS = ortho_4x12 planck_mit
+LAYOUTS = ortho_3x3
 LAYOUTS_HAS_RGB = no
