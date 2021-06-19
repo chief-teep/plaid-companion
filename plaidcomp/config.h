@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* VID & PID from vusb project, see tmk_core/protocol/vusb/USB-IDs-for-free.txt"*/
 #define VENDOR_ID 2341
 #define PRODUCT_ID 8037
-/*#define DEVICE_VER 0x0002  needs to be updated for pro micro */
+#define DEVICE_VER 0x0002
 #define MANUFACTURER chiefteep
 #define PRODUCT Plaidcompanion
 #define DESCRIPTION 3x3 ortholinear macropad with rotary encoder knob
