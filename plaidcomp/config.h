@@ -26,7 +26,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER 0x0002
 #define MANUFACTURER chiefteep
 #define PRODUCT Plaidcompanion
-#define DESCRIPTION 3x3 ortholinear macropad with rotary encoder knob
+#define DESCRIPTION 3 x 3 ortholinear macropad with rotary encoder knob
 
 /* key matrix size */
 #define MATRIX_ROWS 3
