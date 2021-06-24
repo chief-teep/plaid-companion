@@ -18,31 +18,14 @@
 
 
 enum plaid_layers {
-  _QWERTY,
-  _COLEMAK,
-  _DVORAK,
+  _MAIN,
   _LOWER,
   _RAISE,
-  _PLOVER,
   _ADJUST
 };
 
 enum plaid_keycodes {
-  QWERTY = SAFE_RANGE,
-  COLEMAK,
-  DVORAK,
-  PLOVER,
-  EXT_PLV,
-  LED_1,
-  LED_2,
-  LED_3,
-  LED_4,
-  LED_5,
-  LED_6,
-  LED_7,
-  LED_8,
-  LED_9,
-  LED_0
+  MAIN = SAFE_RANGE,
 };
 
 #define LOWER MO(_LOWER)
