@@ -1,5 +1,5 @@
 # MCU name
-MCU = atmega328p
+MCU = atmega32u4
 
 # Bootloader selection
 #   Teensy       halfkay
