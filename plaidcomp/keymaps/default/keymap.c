@@ -36,25 +36,25 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 [_MAIN] = LAYOUT_plaid_comp(
+    KC_MPRV, KC_MPLY, KC_MNXT,
     _______, _______, _______,
-    _______, _______, _______,
-    _______, _______, _______
+    KC_MUTE, LOWER  , RAISE
 ),
 
 
 
 [_LOWER] = LAYOUT_plaid_comp(
+    KC_ACL0, KC_ACL1, KC_ACL2,
     _______, _______, _______,
-    _______, _______, _______,
-    _______, _______, _______
+    KC_MUTE, _______, _______
 ),
 
 
 
 [_RAISE] = LAYOUT_plaid_comp(
-    _______, _______, _______,
-    _______, _______, _______,
-    _______, _______, _______
+    KC_BTN2, KC_MS_U, KC_BTN1,
+    KC_MS_L, KC_MS_D, KC_MS_R,
+    KC_MUTE, _______, _______
 ),
 
 
@@ -65,4 +65,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______
 )
 
+}
+
+/* Rotary encoder control */
+
+bool encoder_update_user(uint8_t index, bool clockwise) {
+
+    if (index == 0) {
+        tap_code(KC_VOLU);
+    } else {
+        tap_code(KC_VOLD);
+    }
+    return true;
 }
